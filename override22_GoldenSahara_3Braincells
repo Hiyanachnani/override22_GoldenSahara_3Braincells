@@ -1,0 +1,462 @@
+import 'package:flutter/material.dart';
+
+
+void main() {
+  runApp(MaterialApp(
+      home:frame1()  )
+
+  );
+
+}
+
+class frame1 extends StatelessWidget {
+  const frame1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Golden Sahara'),
+
+        ),
+        body: Column(
+            children: [
+              Container(
+
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+
+
+                child: Icon(Icons.person,),
+              ),
+
+
+
+              Container(
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+
+                child: ElevatedButton(
+
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(
+                        builder: (context) => frame2()));
+                  },
+                  child: Text('Emergency Services'),
+
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+
+                child: ElevatedButton(
+
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(
+                      builder: (context) => frame3(),));
+                  },
+                  child: Text('Daily Essentials'),
+
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+                child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Hire Services/Helper'),
+
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+
+                child: ElevatedButton(
+
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(
+                        builder: (context) =>frame4()));
+                  },
+                  child: Text('Social Club'),
+
+                ),
+              ),
+
+
+
+
+
+
+
+
+
+
+            ]
+
+        )
+    );
+
+
+  }
+}
+
+
+
+class frame2 extends StatelessWidget {
+  const frame2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Emergency Numbers'),
+
+      ),
+      body: Column(
+          children: [
+            Container(
+
+              padding: EdgeInsets.all(50.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('EMERGENCY SERVICES'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('=> 112-National Emergency Numbers    '),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('=> 100-Police                                   '),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('=> 101-Fire                                     '),
+
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('=> 102-Ambulance                         '),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
+              child: Text('=> 1091,1291-Senior Citizen Helpline'),
+            ),
+
+
+          ]
+      )
+
+      ,
+    );
+  }
+}
+
+
+class frame3 extends StatelessWidget {
+  const frame3({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Daily Essentials'),
+
+        ),
+        body:   Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                onPressed: () {
+                  Navigator.push(context,MaterialPageRoute(
+                      builder: (context) =>frame31()));
+                },
+                child: Text('FOOD'),
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('SERVICES')
+
+              ),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('Click on required service:'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('=>Daily Helper '),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('=>Medical Professional '),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('=>Car Driver'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('=>Laundry Helper'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: Text('=>Cook '),
+            ),
+
+          ],
+        )
+
+    );
+  }
+}
+
+
+class frame31 extends StatelessWidget {
+  const frame31({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+            centerTitle: true,
+            title: Text('FOOD')
+        ),
+        body: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Zomato')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Swiggy')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Big Basket')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('BigBasket')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Blinkit')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(130.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Dunzo')
+
+              ),
+            ),
+
+
+
+
+          ],
+        )
+    );
+  }
+}
+
+class frame4 extends StatelessWidget {
+  const frame4({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+            centerTitle: true,
+            title: Text('Social Club')
+        ),
+        body:Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(
+                        builder: (context) =>frame41()));
+
+                  },
+                  child: Text('Recreational Activities')
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text("Let's Make Friends!")
+
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(100.0, 0.0, 0.0, 0.0),
+              child: ElevatedButton(
+
+                  onPressed: () {},
+                  child: Text('Travel Diaries')
+
+              ),
+            ),
+
+
+
+
+
+
+
+          ],
+        )
+    );
+  }
+}
+
+class frame41 extends StatelessWidget {
+  const frame41({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Recreational Activities'),
+
+      ),
+      body: Column(
+          children: [
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              child: Text('ONGOING EVENTS'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> Antakshari Night'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text(''),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> UPCOMING EVENTS'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> Movie Night + Dinner : Monday 7pm-8pm'),
+
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> Get together with a game of cards: Tuesday 5pm-7pm'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> Wake up healthy! yoga session : 5:30am-7am'),
+            ),
+            Container(
+
+              padding: EdgeInsets.all(10.0),
+              margin: EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
+              child: Text('=> Dumb charades: Friday: 5:30-7pm'),
+            ),
+
+
+          ]
+      )
+
+      ,
+    );
+  }
+}
